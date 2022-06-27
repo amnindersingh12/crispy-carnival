@@ -31,7 +31,7 @@ while true
     # get the user's choice
     puts "Enter your choice: "
     choice = gets.chomp.to_i
-    break if choice == "15"
+
 
   
     operands = 2
@@ -76,11 +76,8 @@ while true
 
     when 15
     puts "Goodbye!"
+    break
     else
     puts "Invalid choice!"
     end
-
-    # display a goodbye message
-    puts "Goodbye!"
-
 end
