@@ -1,5 +1,5 @@
 def menu
-	puts "Welcome to the my calculator"
+	puts "Welcome to my calculator"
 	puts " "
 	puts "1 - Addition"
 	puts "2 - Subtraction"
