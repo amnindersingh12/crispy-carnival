@@ -8,4 +8,25 @@
 # odds_and_evens("abcdefg",false)   # => "aceg"
 
 def odds_and_evens(string, return_odds)
+    if return_odds
+        s = ""
+        for i in 0..string.length-1
+            if i.even? == false
+                s += string[i]
+            end
+        end
+        return s
+        
+    else
+        s = ""
+        for i in 0..string.length-1
+            if i.even?
+                s += string[i]
+            end
+        end
+        return s
+    end
 end
+
+p odds_and_evens("abcdefg",true)    # => "bdf"
+p odds_and_evens("abcdefg",false)   # => "aceg"
